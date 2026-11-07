@@ -1,0 +1,518 @@
+/* COLORES DE MARCA */
+
+:root {
+    --color-primary: #4B315C;
+    --color-secondary: #6E4B80;
+    --color-lilac: #E8DDED;
+    --color-white: #FFFFFF;
+}
+
+/* CONFIGURACIÓN RESPONSIVE GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+/* IMÁGENES RESPONSIVE */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* DISEÑO GENERAL DE LA PÁGINA */
+
+body {
+    margin: 0;
+    background-color: var(--color-white);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+
+
+/* Título principal */
+
+h1 {
+    color: #4B315C;
+}
+
+/* PÁRRAFOS */
+
+p {
+    color: #4B315C;
+}
+
+/* ENCABEZADO */
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/* LOGO */
+
+.logo img {
+    width: 130px;
+    height: auto;
+    display: block;
+      transform: translateY(5px);
+}
+
+/* MENÚ */
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4B315C;
+    text-decoration: none;
+}
+
+/* BANNER PRINCIPAL */
+
+.hero {
+    width: calc(100% - 80px);
+    max-width: 1360px;
+    height: 480px;
+    background-color: #E8DDED;
+    border-radius: 12px;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    color: #4B315C;
+}
+
+.hero p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4B315C;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #6E4B80;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+/* IMAGEN DEL BANNER */
+
+.hero-image {
+    margin-left: auto;
+     transform: translateX(20px);
+}
+
+.hero-image img {
+    width: 500px;
+    height: auto;
+    display: block;
+     border-radius: 12px;
+}
+
+/* SECCIÓN DE FAVORITOS */
+
+.favorites {
+    width: calc(100% - 80px);
+    max-width: 1360px;
+    margin: 60px auto 0;
+}
+
+.favorites h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #4B315C;
+}
+
+/* CONTENEDOR DE PRODUCTOS */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+/* TARJETAS DE PRODUCTOS */
+
+.product-card {
+    background-color: #F7F2F8;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* IMÁGENES DE PRODUCTOS */
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+/* NOMBRE DEL PRODUCTO */
+
+.product-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4B315C;
+}
+
+/* PRECIO */
+
+.product-card p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4B315C;
+}
+
+.promotions {
+    width: calc(100% - 80px);
+    max-width: 1360px;
+    height: 220px;
+    background-color: #E8DDED;
+    border-radius: 12px;
+    margin: 60px auto 0;
+    padding: 0 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.promotion-content {
+    max-width: 700px;
+}
+
+.promotions h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #4B315C;
+}
+
+.promotions p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4B315C;
+}
+
+.promotion-button {
+    display: inline-block;
+    background-color: #6E4B80;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-brand img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-brand p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+footer {
+    background-color: #4B315C;
+    width: 100%;
+    margin-top: 60px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Nombre de la marca */
+.footer-brand h2 {
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+
+/* Frase de la marca */
+.footer-brand p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+/* Títulos de las columnas */
+.footer-links h3,
+.footer-contact h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+/* Enlaces */
+.footer-links a,
+.footer-contact a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+/* Organización de los enlaces */
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-bottom p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.footer-contact a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-contact i {
+    font-size: 16px;
+    width: 18px;
+}
+
+/* ADAPTACIÓN PARA TABLETS */
+
+@media (max-width: 1024px) {
+
+    .hero {
+        width: calc(100% - 40px);
+        padding: 0 30px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-image img {
+        width: 400px;
+    }
+
+    .favorites,
+    .promotions {
+        width: calc(100% - 40px);
+    }
+
+    .product-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+@media (max-width: 768px) {
+
+    /* ENCABEZADO */
+    header {
+        height: auto;
+        padding: 15px 16px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .logo img {
+        width: 110px;
+    }
+
+    header nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 14px;
+    }
+
+    header nav a {
+        font-size: 11px;
+    }
+
+    /* BANNER PRINCIPAL */
+    .hero {
+        width: calc(100% - 24px);
+        height: auto;
+        padding: 25px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-left: 0;
+        transform: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+    /* ADAPTACIÓN DEL BANNER DE PROMOCIONES PARA CELULARES */
+
+    .promotions {
+        height: auto;
+        min-height: 0;
+        padding: 30px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .promotion-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .promotions h2 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin: 0 0 12px;
+    }
+
+    .promotions p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .promotion-button {
+        align-self: flex-start;
+    }
+
+
+    /* ADAPTACIÓN DEL FOOTER PARA CELULARES */
+
+    footer {
+        padding: 30px 24px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-contact {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .footer-contact a {
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+    }
+
+    .footer-bottom p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+
