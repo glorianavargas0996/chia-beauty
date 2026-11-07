@@ -447,7 +447,7 @@ footer {
         width: 100%;
         max-width: 320px;
     }
-}
+
     /* ADAPTACIÓN DEL BANNER DE PROMOCIONES PARA CELULARES */
 
     .promotions {
@@ -515,4 +515,6 @@ footer {
         line-height: 1.5;
     }
 
+}
+    
 
